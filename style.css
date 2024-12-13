@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #ff7e5f, #eab084, #de8716 );
+    background-size: 400% 400%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.meme-generator {
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    padding: 5px;
+}
+
+.meme-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.generate-meme-btn {
+    background-color: #fff;
+    color: #ff7e5f;
+    padding: 5px 25px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 10px 8px 7px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.generate-meme-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 12px 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: #feb47b;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 10px 8px 16px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+.meme-author {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
